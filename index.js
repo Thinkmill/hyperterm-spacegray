@@ -1,19 +1,31 @@
 'use strict';
-var assign = require('object-assign');
 
 // Constants
-var backgroundColor = '#343d46';
-var dividerColor = backgroundColor;
-var foregroundColor = '#65737e';
-var selectionBackground = '#4f5b66';
-var selectionForeground = '#a7adba';
+const backgroundColor = '#343d46';
+const dividerColor = backgroundColor;
+const foregroundColor = '#65737e';
+const selectionBackground = '#4f5b66';
+const selectionForeground = '#a7adba';
 
 // Apply theme
 exports.decorateConfig = function (config) {
-  return assign({}, config, {
-    backgroundColor: backgroundColor,
-    foregroundColor: foregroundColor,
+  return Object.assign({}, config, {
+    backgroundColor,
+    foregroundColor,
     borderColor: dividerColor,
     cursorColor: selectionForeground,
+    css: `
+      ${config.css || ''}
+      .tab_tab {
+        color: ${foregroundColor} !important;
+        background-color: ${backgroundColor};
+      }
+
+      .tab_tab.tab_active {
+        font-weight: bold;
+        color: ${backgroundColor} !important;
+        background-color: ${foregroundColor};
+      }
+    `
   });
 };
