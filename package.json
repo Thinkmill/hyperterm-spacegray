@@ -1,0 +1,27 @@
+{
+  "name": "hyperterm-spacegray",
+  "version": "0.0.1",
+  "description": "Spacegray theme for hyperterm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxstbr/hyperterm-spacegray.git"
+  },
+  "keywords": [
+    "hyperterm",
+    "spacegray",
+    "theme"
+  ],
+  "author": "Max Stoiber <contact@mxstbr.com> (http://mxstbr.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mxstbr/hyperterm-spacegray/issues"
+  },
+  "homepage": "https://github.com/mxstbr/hyperterm-spacegray#readme",
+  "dependencies": {
+    "object-assign": "^4.1.0"
+  }
+}
