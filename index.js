@@ -20,12 +20,6 @@ exports.decorateConfig = function (config) {
         color: ${foregroundColor} !important;
         background-color: ${backgroundColor};
       }
-
-      .tab_tab.tab_active {
-        font-weight: bold;
-        color: ${backgroundColor} !important;
-        background-color: ${foregroundColor};
-      }
     `
   });
 };
