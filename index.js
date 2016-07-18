@@ -8,18 +8,18 @@ const colors = [
   backgroundColor,
   '#B4656F', // red
   '#68A281', // green
-  '#FFAA2C', // yellow
+  '#E2EB98', // yellow
   '#5786B8', // blue
-  '#DB2FF4', // pink
-  '#5786B8', // cyan
+  '#E0BAD7', // pink
+  '#38CCD1', // cyan
   '#a7adba', // light gray
   '#4f5b66', // medium gray
   '#B4656F', // red
   '#68A281', // green
-  '#FFAA2C', // yellow
+  '#E2EB98', // yellow
   '#5786B8', // blue
-  '#DB2FF4', // pink
-  '#5786B8', // cyan
+  '#E0BAD7', // pink
+  '#38CCD1', // cyan
   '#ffffff', // white
   foregroundColor
 ];
