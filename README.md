@@ -1,6 +1,6 @@
 # `hyperterm-spacegray`
 
-![Spacegray Theme in Action](https://cloud.githubusercontent.com/assets/7525670/16908072/173b9ff6-4cc9-11e6-9610-aa39371613e0.png)
+![Spacegray Theme in Action](https://cloud.githubusercontent.com/assets/7525670/16917211/ea94f6b8-4d00-11e6-86d4-8a50ba652b10.png)
 
 A port of the Spacegray theme to hyperterm. Still has some rough edges, especially around text.
 
