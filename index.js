@@ -18,7 +18,7 @@ exports.decorateConfig = function (config) {
       ${config.css || ''}
       .tab_tab {
         color: ${foregroundColor} !important;
-        background-color: ${backgroundColor};
+        background-color: ${backgroundColor} !important;
       }
     `
   });
