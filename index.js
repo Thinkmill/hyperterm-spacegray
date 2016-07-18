@@ -1,15 +1,12 @@
-'use strict';
-
 // Constants
 const backgroundColor = '#343d46';
-const dividerColor = backgroundColor;
 const foregroundColor = '#c0c5ce';
 const selectionBackground = '#4f5b66';
 const selectionForeground = '#a7adba';
 
 // Apply theme
-exports.decorateConfig = function (config) {
-  return Object.assign({}, config, {
+exports.decorateConfig = (config) => (
+  Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
     borderColor: dividerColor,
@@ -19,11 +16,11 @@ exports.decorateConfig = function (config) {
       '#FFFFFF'
     ],
     css: `
-      ${config.css || ''}
+      ${config.css || ''}
       .tab_tab {
         color: ${foregroundColor} !important;
         background-color: ${backgroundColor} !important;
       }
     `
-  });
-};
+  })
+);
