@@ -3,7 +3,7 @@
 // Constants
 const backgroundColor = '#343d46';
 const dividerColor = backgroundColor;
-const foregroundColor = '#65737e';
+const foregroundColor = '#c0c5ce';
 const selectionBackground = '#4f5b66';
 const selectionForeground = '#a7adba';
 
@@ -15,6 +15,9 @@ exports.decorateConfig = function (config) {
     borderColor: dividerColor,
     cursorColor: selectionForeground,
     // TODO Add colors array here, figure out what each color is used for
+    colors: [
+      '#FFFFFF'
+    ],
     css: `
       ${config.css || ''}
       .tab_tab {
