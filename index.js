@@ -6,7 +6,7 @@ const foregroundColor = '#c0c5ce';
 // TODO Figure out good color for Cyan
 const colors = [
   backgroundColor,
-  '#9B4444', // red
+  '#B4656F', // red
   '#68A281', // green
   '#FFAA2C', // yellow
   '#5786B8', // blue
@@ -14,7 +14,7 @@ const colors = [
   '#5786B8', // cyan
   '#a7adba', // light gray
   '#4f5b66', // medium gray
-  '#9B4444', // red
+  '#B4656F', // red
   '#68A281', // green
   '#FFAA2C', // yellow
   '#5786B8', // blue
