@@ -4,7 +4,8 @@
   "description": "Spacegray theme for hyperterm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run test",
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/mxstbr/hyperterm-spacegray/issues"
   },
-  "homepage": "https://github.com/mxstbr/hyperterm-spacegray#readme"
+  "homepage": "https://github.com/mxstbr/hyperterm-spacegray#readme",
+  "devDependencies": {
+    "eslint": "^3.1.0",
+    "eslint-config-airbnb-base": "^9.0.1",
+    "eslint-plugin-import": "^1.11.0"
+  }
 }
