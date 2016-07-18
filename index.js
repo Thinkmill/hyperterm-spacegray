@@ -14,6 +14,7 @@ exports.decorateConfig = function (config) {
     foregroundColor,
     borderColor: dividerColor,
     cursorColor: selectionForeground,
+    // TODO Add colors array here, figure out what each color is used for
     css: `
       ${config.css || ''}
       .tab_tab {
