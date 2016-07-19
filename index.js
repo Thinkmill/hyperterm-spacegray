@@ -3,24 +3,33 @@ const backgroundColor = '#343d46';
 const foregroundColor = '#c0c5ce';
 
 // Colors
-// TODO Figure out good color for Cyan
+const RED = '#B4656F';
+const GREEN = '#68A281';
+const YELLOW = '#E2EB98';
+const BLUE = '#5786B8';
+const PINK = '#E0BAD7';
+const CYAN = '#38CCD1';
+const LIGHT_GRAY = '#a7adba';
+const MEDIUM_GRAY = '#4f5b66';
+const WHITE = '#ffffff';
+
 const colors = [
   backgroundColor,
-  '#B4656F', // red
-  '#68A281', // green
-  '#E2EB98', // yellow
-  '#5786B8', // blue
-  '#E0BAD7', // pink
-  '#38CCD1', // cyan
-  '#a7adba', // light gray
-  '#4f5b66', // medium gray
-  '#B4656F', // red
-  '#68A281', // green
-  '#E2EB98', // yellow
-  '#5786B8', // blue
-  '#E0BAD7', // pink
-  '#38CCD1', // cyan
-  '#ffffff', // white
+  RED,
+  GREEN,
+  YELLOW,
+  BLUE,
+  PINK,
+  CYAN,
+  LIGHT_GRAY,
+  MEDIUM_GRAY,
+  RED,
+  GREEN,
+  YELLOW,
+  BLUE,
+  PINK,
+  CYAN,
+  WHITE,
   foregroundColor
 ];
 
@@ -29,6 +38,7 @@ exports.decorateConfig = (config) => (
   Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
+    borderColor: LIGHT_GRAY,
     cursorColor: foregroundColor,
     colors,
     css: `
