@@ -50,3 +50,17 @@ exports.decorateConfig = (config) => (
     `
   })
 );
+
+// Development middleware for HMR
+exports.middleware = () => (next) => (action) => {
+  /* eslint-disable no-param-reassign, default-case */
+  switch (action.type) {
+    case 'CONFIG_LOAD':
+    case 'CONFIG_RELOAD':
+      action.config.foregroundColor = foregroundColor;
+      action.config.backgroundColor = backgroundColor;
+      action.config.cursorColor = foregroundColor;
+      action.config.colors = colors;
+  }
+  next(action);
+};
