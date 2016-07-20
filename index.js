@@ -38,7 +38,7 @@ exports.decorateConfig = (config) => (
   Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
-    borderColor: LIGHT_GRAY,
+    borderColor: MEDIUM_GRAY,
     cursorColor: foregroundColor,
     colors,
     css: `
@@ -46,6 +46,14 @@ exports.decorateConfig = (config) => (
       .tab_tab {
         color: ${foregroundColor} !important;
         background-color: ${backgroundColor} !important;
+      }
+
+      .tab_active:before {
+        border-bottom: none !important;
+      }
+
+      .tab_first {
+        border-left: 1px solid ${MEDIUM_GRAY};
       }
     `
   })
