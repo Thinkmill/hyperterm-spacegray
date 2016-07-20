@@ -10,7 +10,7 @@ Contributions appreciated!
 
 Add this to the plugins array in your `.hyperterm.js` and reload hyperterm to install it!
 
-![Spacegray Theme Installation Instructions](https://cloud.githubusercontent.com/assets/7525670/16917690/f257e4a8-4d02-11e6-9af5-0ba62186f812.gif)
+![Spacegray Theme Installation Instructions](https://cloud.githubusercontent.com/assets/7525670/16980506/95a69974-4e66-11e6-8eaa-162f01062273.gif)
 
 # License
 
