@@ -1,6 +1,7 @@
 // Constants
 const backgroundColor = '#343d46';
 const foregroundColor = '#c0c5ce';
+const darkerBackground = '#2F3841';
 
 // Colors
 const RED = '#B4656F';
@@ -43,17 +44,31 @@ exports.decorateConfig = (config) => (
     colors,
     css: `
       ${config.css || ''}
-      .tab_tab {
-        color: ${foregroundColor} !important;
-        background-color: ${backgroundColor} !important;
+      /* Highlight active tab by making rest of nav darker */
+      .tabs_list {
+        background-color: ${darkerBackground} !important;
       }
 
+      /* Set tab colors */
+      .tab_tab {
+        color: ${foregroundColor} !important;
+        background-color: ${darkerBackground} !important;
+        border-left: 1px solid ${MEDIUM_GRAY};
+      }
+
+      /* Hide bottom border if tab is active, make bg lighter */
+      .tab_active {
+        background-color: ${backgroundColor} !important;
+        height: calc(100% + 1px);
+      }
+
+      /* Hide hardcoded black bottom border */
       .tab_active:before {
         border-bottom: none !important;
       }
 
-      .tab_first {
-        border-left: 1px solid ${MEDIUM_GRAY};
+      .tab_text {
+        border-color: transparent !important;
       }
     `
   })
