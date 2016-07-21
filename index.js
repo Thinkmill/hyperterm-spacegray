@@ -53,13 +53,21 @@ exports.decorateConfig = (config) => (
       .tab_tab {
         color: ${foregroundColor} !important;
         background-color: ${darkerBackground} !important;
-        border-left: 1px solid ${MEDIUM_GRAY};
+        border: none !important;
+        border-right: 1px solid transparent !important;
+        border-left: 1px solid transparent !important;
       }
 
       /* Hide bottom border if tab is active, make bg lighter */
       .tab_active {
         background-color: ${backgroundColor} !important;
         height: calc(100% + 1px);
+        border-left: 1px solid ${MEDIUM_GRAY} !important;
+        border-right: 1px solid ${MEDIUM_GRAY} !important;
+      }
+
+      .tab_tab:last-child {
+        border-right: 1px solid transparent !important;
       }
 
       /* Hide hardcoded black bottom border */
