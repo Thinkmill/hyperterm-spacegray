@@ -2,6 +2,7 @@
 const backgroundColor = '#343d46';
 const foregroundColor = '#c0c5ce';
 const darkerBackground = '#2F3841';
+const borderColor = '#4f5b66';
 
 // Colors
 const RED = '#B4656F';
@@ -10,8 +11,8 @@ const YELLOW = '#E2EB98';
 const BLUE = '#5786B8';
 const PINK = '#E0BAD7';
 const CYAN = '#38CCD1';
-const LIGHT_GRAY = '#a7adba';
-const MEDIUM_GRAY = '#4f5b66';
+const LIGHT_GRAY = foregroundColor;
+const MEDIUM_GRAY = '#878C96';
 const WHITE = '#ffffff';
 
 const colors = [
@@ -39,7 +40,7 @@ exports.decorateConfig = (config) => (
   Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
-    borderColor: MEDIUM_GRAY,
+    borderColor: borderColor,
     cursorColor: foregroundColor,
     colors,
     css: `
@@ -62,8 +63,8 @@ exports.decorateConfig = (config) => (
       .tab_active {
         background-color: ${backgroundColor} !important;
         height: calc(100% + 1px);
-        border-left: 1px solid ${MEDIUM_GRAY} !important;
-        border-right: 1px solid ${MEDIUM_GRAY} !important;
+        border-left: 1px solid ${borderColor} !important;
+        border-right: 1px solid ${borderColor} !important;
       }
 
       .tab_tab:last-child {
