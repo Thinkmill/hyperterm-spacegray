@@ -15,25 +15,24 @@ const LIGHT_GRAY = foregroundColor;
 const MEDIUM_GRAY = '#878C96';
 const WHITE = '#ffffff';
 
-const colors = [
-  backgroundColor,
-  RED,
-  GREEN,
-  YELLOW,
-  BLUE,
-  PINK,
-  CYAN,
-  LIGHT_GRAY,
-  MEDIUM_GRAY,
-  RED,
-  GREEN,
-  YELLOW,
-  BLUE,
-  PINK,
-  CYAN,
-  WHITE,
-  foregroundColor
-];
+const colors = {
+    black: backgroundColor,
+  red: RED,
+  green: GREEN,
+  yellow: YELLOW,
+  blue: BLUE,
+  magenta: PINK,
+  cyan: CYAN,
+  white: LIGHT_GRAY,
+  lightblack: MEDIUM_GRAY,
+  lightRed: RED,
+  lightGreen: GREEN,
+  lightYellow: YELLOW,
+  lightBlue: BLUE,
+  lightMagenta: PINK,
+  lightCyan: CYAN,
+  lightWhite: WHITE
+};
 
 // Apply theme
 exports.decorateConfig = (config) => (
