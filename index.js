@@ -16,7 +16,7 @@ const MEDIUM_GRAY = '#878C96';
 const WHITE = '#ffffff';
 
 const colors = {
-    black: backgroundColor,
+  black: backgroundColor,
   red: RED,
   green: GREEN,
   yellow: YELLOW,
