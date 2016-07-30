@@ -34,14 +34,18 @@ const colors = {
   lightWhite: WHITE
 };
 
+const options = {
+  light: false
+};
+
 // Apply theme
 exports.decorateConfig = (config) => (
   Object.assign({}, config, {
-    backgroundColor,
+    backgroundColor: options.light ? '#FFFFFF' : backgroundColor,
     foregroundColor,
     borderColor: borderColor,
     cursorColor: foregroundColor,
-    colors,
+    colors: options.light ? [] : colors,
     css: `
       ${config.css || ''}
       /* Highlight active tab by making rest of nav darker */
@@ -81,6 +85,31 @@ exports.decorateConfig = (config) => (
     `
   })
 );
+
+exports.decorateMenu = (menuTemplate) => {
+  const pluginMenu = menuTemplate.find((item) => item.label === 'Plugins');
+  pluginMenu.submenu[pluginMenu.submenu.length] = {
+    label: 'hyperterm-spacegray',
+    submenu: [{
+      label: 'Light Theme',
+      type: 'radio',
+      checked: options.light,
+      click(_, focusedWindow) {
+        options.light = true;
+        if (focusedWindow) focusedWindow.reload();
+      }
+    }, {
+      label: 'Dark Theme',
+      type: 'radio',
+      checked: !options.light,
+      click(_, focusedWindow) {
+        options.light = false;
+        if (focusedWindow) focusedWindow.reload();
+      }
+    }]
+  };
+  return menuTemplate;
+};
 
 // Development middleware for HMR
 exports.middleware = () => (next) => (action) => {
