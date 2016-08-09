@@ -80,7 +80,7 @@ exports.decorateConfig = (config) => (
       }
     `,
     termCSS: `
-      ${config.termCSS || ''}
+      ${config.termCSS || ''}
       ::selection {
         color: ${darkerBackground};
         background-color: ${WHITE};
