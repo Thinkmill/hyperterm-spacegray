@@ -78,6 +78,13 @@ exports.decorateConfig = (config) => (
       .tab_text {
         border-color: transparent !important;
       }
+    `,
+    termCSS: `
+      ${config.termCSS || ''}
+      ::selection {
+        color: ${darkerBackground};
+        background-color: ${WHITE};
+      }
     `
   })
 );
