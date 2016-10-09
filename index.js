@@ -44,8 +44,13 @@ exports.decorateConfig = (config) => (
     colors,
     css: `
       ${config.css || ''}
+      /* Set background color */
+      .hyperterm_main {
+        background-color: ${backgroundColor} !important;
+      }
+
       /* Highlight active tab by making rest of nav darker */
-      .tabs_list {
+      .header_header {
         background-color: ${darkerBackground} !important;
       }
 
@@ -56,6 +61,7 @@ exports.decorateConfig = (config) => (
         border: none !important;
         border-right: 1px solid transparent !important;
         border-left: 1px solid transparent !important;
+        border-bottom: 1px solid ${borderColor} !important;
       }
 
       /* Hide bottom border if tab is active, make bg lighter */
@@ -64,6 +70,7 @@ exports.decorateConfig = (config) => (
         height: calc(100% + 1px);
         border-left: 1px solid ${borderColor} !important;
         border-right: 1px solid ${borderColor} !important;
+        border-bottom: none !important;
       }
 
       .tab_tab:last-child {
