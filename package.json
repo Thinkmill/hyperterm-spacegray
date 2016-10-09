@@ -24,7 +24,7 @@
   "homepage": "https://github.com/mxstbr/hyperterm-spacegray#readme",
   "devDependencies": {
     "eslint": "^3.1.0",
-    "eslint-config-airbnb-base": "^9.0.1",
+    "eslint-config-airbnb-base": "^8.0.0",
     "eslint-plugin-import": "^1.11.0"
   }
 }
